@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Sameshwar Initiative - Sacred Sanctuary Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: '#FF9933',
+                        spiritualGreen: '#138808',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gradient-to-b from-saffron-50 to-white min-h-screen">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center gap-12 mb-20">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-spiritualGreen-800">Building a Sacred Space
+                    in
+                    Haridwar</h1>
+                <p class="text-gray-700 mb-8">Join us in creating a spiritual sanctuary where seekers can find
+                    peace, wisdom, and community in the holy city of Haridwar.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="donate.html"
+                        class="bg-spiritualGreen-600 hover:bg-black text-spiritualGreen px-6 py-3 rounded-lg text-center font-medium transition duration-300">Donate
+                        Now</a>
+                    <a href="about.html"
+                        class="border-2 border-saffron-500 text-saffron-600 hover:bg-saffron px-6 py-3 rounded-lg text-center font-medium transition duration-300">Learn
+                        More</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="C:\Users\Ishita\Desktop\Om-Namah-Shivay-Hindi-2023-20230422053338-500x500.jpg"
+                    alt="Peaceful ashram setting" class="rounded-xl shadow-lg w-full h-auto">
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-12 text-spiritualGreen-800">Our Vision for the Ashram</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-saffron-500">
+                    <i data-feather="home" class="w-12 h-12 text-saffron-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Sacred Accommodation</h3>
+                    <p class="text-gray-600">Comfortable living spaces for spiritual seekers and pilgrims.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-spiritualGreen-500">
+                    <i data-feather="book-open" class="w-12 h-12 text-spiritualGreen-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Wisdom Library</h3>
+                    <p class="text-gray-600">Ancient scriptures and spiritual texts for study and reflection.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-saffron-500">
+                    <i data-feather="users" class="w-12 h-12 text-saffron-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Community Space</h3>
+                    <p class="text-gray-600">A gathering place for satsang, meditation, and spiritual discourse.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="bg-spiritualGreen-50 p-8 rounded-xl mb-20">
+            <h2 class="text-3xl font-bold text-center mb-12 text-spiritualGreen-800">What People Are Saying</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="text-gray-700 italic mb-4">"Creating an ashram in Haridwar is a divine mission that will
+                        bless countless souls on their spiritual journey."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/1" alt="Swami Ji"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Swami Atmananda</h4>
+                            <p class="text-sm text-gray-500">Spiritual Teacher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="text-gray-700 italic mb-4">"I've been waiting for an opportunity to contribute to such a
+                        meaningful project in the holy city of Haridwar."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/2" alt="Devotee"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Priya Sharma</h4>
+                            <p class="text-sm text-gray-500">Devotee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-gradient-to-r from-saffron-500 to-spiritualGreen-600 text-white p-8 rounded-xl text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Be Part of This Divine Project?</h2>
+            <p class="text-xl mb-6">Every contribution brings us closer to creating this sacred space.</p>
+            <a href="/donate.html"
+                class="inline-block bg-white text-spiritualGreen-700 hover:bg-gray-100 px-8 py-3 rounded-lg font-bold transition duration-300">Make
+                a Donation</a>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+
+</html>

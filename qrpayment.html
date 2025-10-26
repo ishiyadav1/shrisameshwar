@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scan to Pay - Divine Haven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient-to-b from-saffron-50 to-white min-h-screen">
+    <custom-navbar></custom-navbar>
+    <main class="container mx-auto py-16 text-center">
+        <h1 class="text-3xl font-bold mb-4">Scan to Pay</h1>
+        <img src="YOUR_QR_IMAGE_URL.png" alt="Pay via UPI QR" style="max-width:240px; margin:auto;">
+        <p class="mt-6 text-xl text-gray-700">Scan this code with any UPI app to donate.</p>
+        <a href="index.html" class="mt-8 inline-block text-spiritualGreen font-semibold">Back to Home</a>
+    </main>
+    <button id="confirm-payment" class="mt-8 bg-spiritualGreen-600 text-white py-3 px-6 rounded-lg text-lg font-bold">
+        I've Paid, Show Thank You
+    </button>
+
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <!-- Add to your HTML -->
+    <div id="thankyou-modal"
+        style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(20,60,40,0.2); z-index:999; justify-content:center; align-items:center;">
+        <div
+            style="background:#fff; padding:2rem 3rem; border-radius:1rem; box-shadow:0 4px 24px #13880888; text-align:center;">
+            <h2 class="text-2xl font-bold mb-2">Thank You!</h2>
+            <p class="text-lg mb-4">Your donation has been received. You’re helping build a sacred space for all.</p>
+            <button onclick="document.getElementById('thankyou-modal').style.display='none'"
+                class="bg-spiritualGreen-600 text-white px-5 py-2 rounded font-semibold">Close</button>
+        </div>
+    </div>
+
+    <!-- Script for modal -->
+    <script>
+        document.getElementById('confirm-payment').addEventListener('click', function () {
+            document.getElementById('thankyou-modal').style.display = 'flex';
+        });
+    </script>
+
+
+</body>
+
+</html>

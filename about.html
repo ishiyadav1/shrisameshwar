@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Ashram - Our Sacred Mission</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: '#FF9933',
+                        spiritualGreen: '#138808',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gradient-to-b from-saffron-50 to-white min-h-screen">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="max-w-4xl mx-auto mb-16">
+            <h1 class="text-4xl font-bold text-center mb-8 text-spiritualGreen-800">About Ashram</h1>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="C:\Users\Ishita\Desktop\vertical.webp" alt="Haridwar Ganga Aarti"
+                    class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <p class="text-lg text-gray-700 mb-6">Ashram is a sacred project initiated by a group
+                        of spiritual seekers with the vision of creating a peaceful sanctuary in the holy city of
+                        Haridwar, where individuals from all walks of life can come to meditate, study spiritual texts,
+                        and connect with like-minded souls.</p>
+                    <p class="text-lg text-gray-700 mb-6">Located near the banks of the Ganges, our ashram will serve as
+                        a spiritual retreat center offering accommodation, meditation halls, a wisdom library, and
+                        spaces for satsang and spiritual discourse.</p>
+                    <blockquote class="border-l-4 border-saffron-500 pl-4 my-6 italic text-gray-700">
+                        "Just as the Ganges flows through Haridwar, may the divine grace flow through this sacred space,
+                        touching all who enter with peace and wisdom."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-4xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8 text-spiritualGreen-800">Our Founders</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="http://static.photos/people/640x360/10" alt="Swami Atmananda"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Swami Atmananda</h3>
+                        <p class="text-gray-600 mb-4">Spiritual Guide & Meditation Teacher</p>
+                        <p class="text-gray-700">With over 30 years of spiritual practice in the Himalayas, Swami Ji
+                            brings deep wisdom and guidance to the project.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="http://static.photos/people/640x360/11" alt="Dr. Meera Patel"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Dr. Meera Patel</h3>
+                        <p class="text-gray-600 mb-4">Trustee & Ayurvedic Doctor</p>
+                        <p class="text-gray-700">A practitioner of Ayurveda and yoga therapy, Dr. Patel ensures the
+                            ashram will promote holistic well-being.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-4xl mx-auto bg-spiritualGreen-50 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-center mb-8 text-spiritualGreen-800">Why Haridwar?</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-lg text-gray-700 mb-4">Haridwar, meaning "Gateway to God," is one of the seven
+                        holiest places in Hinduism, where the Ganges leaves the mountains and enters the plains.</p>
+                    <p class="text-lg text-gray-700 mb-4">Every twelve years, Haridwar hosts the Kumbh Mela, the largest
+                        peaceful gathering in the world, where millions come to bathe in the sacred river.</p>
+                    <p class="text-lg text-gray-700">An ashram in Haridwar provides the perfect environment for
+                        spiritual growth, with the divine energy of the Ganges and the presence of countless saints and
+                        seekers.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <img src="http://static.photos/spiritual/640x360/46" alt="Haridwar Ghats" class="rounded-lg w-full">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+
+</html>
